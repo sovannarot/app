@@ -26,4 +26,10 @@ window.addEventListener("beforeinstallprompt", (e) => {
 installButton.addEventListener("click", async () => {
   deferredPrompt.prompt();
   deferredPrompt = null;
+  const { outcome } = await deferredPrompt.userChoice;
+  if (outcome === "accepted") {
+    console.log("User accepted the install prompt.");
+  } else if (outcome === "dismissed") {
+    console.log("User dismissed the install prompt");
+  }
 });
