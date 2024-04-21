@@ -121,11 +121,10 @@ body {
   border: 2px white solid;
   background: #0a4af7;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 17px;
 }
-#section #buttonmid a {
+#section #buttonmid #timerbutton {
+  font-size: 17px;
   width: 153px;
   height: 45px;
   border-radius: 20px;
@@ -195,5 +194,29 @@ body {
   50% {
     width: 50px;
     background: #fee800;
+  }
+}
+#articlebutton {
+  display: flex;
+  font-size: 17px;
+  width: 153px;
+  height: 45px;
+  border-radius: 20px;
+  border: 2px white solid;
+  background: #0a4af7;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+#installbutton {
+  display: none;
+}
+@media (display-mode: browser) {
+  #installbutton {
+    display: block;
+  }
+  #articlebutton {
+    display: none;
   }
 }
