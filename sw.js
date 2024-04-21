@@ -9,7 +9,6 @@ const assets = [
   "/src/css/about.css",
   "/src/js/about.js",
   "/src/html/clock.html",
-  "https://raw.githubusercontent.com/sovannarot/app/main/src/html/fallback.html",
   "/src/css/clock.css",
   "/src/js/clock.js",
   "/src/html/post.html",
@@ -70,20 +69,12 @@ self.addEventListener("fetch", (e) => {
     caches.match(e.request).then((response) => {
       return (
         response ||
-        fetch(e.request)
-          .then(async (fetchRes) => {
-            return caches.open(dynamiccacheName).then((cache) => {
-              cache.put(e.request.url, fetchRes.clone());
-              return fetchRes;
-            });
-          })
-          .catch(() => {
-            if (e.request.url.indexOf(".html") > -1) {
-              return caches.match(
-                "https://raw.githubusercontent.com/sovannarot/app/main/src/html/fallback.html"
-              );
-            }
-          })
+        fetch(e.request).then(async (fetchRes) => {
+          return caches.open(dynamiccacheName).then((cache) => {
+            cache.put(e.request.url, fetchRes.clone());
+            return fetchRes;
+          });
+        })
       );
     })
   );
