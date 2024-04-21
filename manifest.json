@@ -66,10 +66,10 @@
       "type": "image/jpg"
     },
     {
-      "src": "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/activerecall.jpg",
+      "src": "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/activerecall.png",
       "sizes": "1920x1080",
       "form_factor": "narrow",
-      "type": "image/jpg"
+      "type": "image/png"
     }
   ],
   "shortcuts": [
