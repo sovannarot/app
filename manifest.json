@@ -7,7 +7,7 @@
   "start_url": "/app/index.html",
   "name": "SovannarotApp",
   "short_name": "Sovannarot",
-  "description": "SovannarotApp Is A WebApp have a lot of learning skills like flowtime technique, feynman technique, active recall. All it can make you learn fast and learn better than normal.",
+  "description": "SovannarotApp Is A WebApp have a lot of learning skills like flowtime technique, feynman technique. All it can make you learn fast and learn better than normal.",
   "icons": [
     {
       "src": "https://raw.githubusercontent.com/sovannarot1/app/main/assets/icon/maskable_icon_x72.png",

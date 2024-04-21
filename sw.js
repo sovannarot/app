@@ -1,5 +1,5 @@
-var cacheName = "static-v1";
-var dynamiccacheName = "static-v2";
+var cacheName = "v2";
+var dynamiccacheName = "v1";
 const assets = [
   "/",
   "/index.html",
@@ -9,7 +9,7 @@ const assets = [
   "/src/css/about.css",
   "/src/js/about.js",
   "/src/html/clock.html",
-  "/src/html/fallback.html",
+  "https://raw.githubusercontent.com/sovannarot/app/main/src/html/fallback.html",
   "/src/css/clock.css",
   "/src/js/clock.js",
   "/src/html/post.html",
@@ -21,7 +21,6 @@ const assets = [
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/font/khmer1.woff2",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/font/khmer2.ttf",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/favicon.jpg",
-  "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/activerecall.png",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/learningpyramid.jpg",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/about.png",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/img/burgermenu.svg",
@@ -45,6 +44,7 @@ const assets = [
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/icon/maskable_icon_x57.png",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/icon/maskable_icon_x180.png",
   "https://raw.githubusercontent.com/sovannarot1/app/main/assets/icon/shortcut.jpg",
+  "https://raw.githubusercontent.com/sovannarot1/sovannarotapi/main/post.js",
 ];
 self.addEventListener("install", (e) => {
   console.log("service worker has been installed");
@@ -79,7 +79,9 @@ self.addEventListener("fetch", (e) => {
           })
           .catch(() => {
             if (e.request.url.indexOf(".html") > -1) {
-              return caches.match("/src/html/fallback.html");
+              return caches.match(
+                "https://raw.githubusercontent.com/sovannarot/app/main/src/html/fallback.html"
+              );
             }
           })
       );
