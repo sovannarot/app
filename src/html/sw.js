@@ -80,7 +80,7 @@ self.addEventListener("fetch", (e) => {
           })
           .catch(() => {
             if (e.request.url.indexOf(".html") > -1) {
-              return caches.match("/src/html/fallback.html");
+              return caches.match("https://raw.githubusercontent.com/sovannarot/app/main/src/html/fallback.html");
             }
           })
       );
