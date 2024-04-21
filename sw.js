@@ -43,7 +43,6 @@ const assets = [
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/icon/maskable_icon_x57.png",
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/icon/maskable_icon_x180.png",
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/icon/shortcut.jpg",
-  "https://raw.githubusercontent.com/sovannarot1/sovannarotapi/main/post.js",
 ];
 self.addEventListener("install", (e) => {
   console.log("service worker has been installed");
