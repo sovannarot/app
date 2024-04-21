@@ -15,6 +15,7 @@ const assets = [
   "/src/css/post.css",
   "/service.js",
   "/sw.js",
+  "/src/html/sw.js",
   "/src/js/post.js",
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/sound/ring.mp3",
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/font/khmer1.woff2",
@@ -43,7 +44,7 @@ const assets = [
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/icon/maskable_icon_x57.png",
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/icon/maskable_icon_x180.png",
   "https://raw.githubusercontent.com/sovannarot/app/main/assets/icon/shortcut.jpg",
-  "https://raw.githubusercontent.com/sovannarot1/sovannarotapi/main/post.js",
+  "https://raw.githubusercontent.com/sovannarot/app/main/assets/img/activerecall.jpg",
 ];
 self.addEventListener("install", (e) => {
   console.log("service worker has been installed");
