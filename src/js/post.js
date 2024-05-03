@@ -1,6 +1,6 @@
 const data = [
   {
-    photo: "https://metodes.lv/wp-content/uploads/sq3r_en.png",
+    photo: "https://raw.githubusercontent.com/sovannarot/app/main/assets/img/Picsart_24-05-03_20-05-59-822.png",
     name: "SQ3R Technique",
     date: "03/05/2024",
     about: "SQ3R Technique​ ជាវិធីរៀនសូត្រម្យ៉ាងដែលប្រើសម្រាប់អោយយើងអាចអានសៀវភៅចងចាំនិងចេះបានប្រសិទ្ធផលខ្ពស់ក្នុងការរៀនដោយអានសៀវភៅ។ វិធីនេះត្រូវបានប្រើដោយសិស្សជាច្រើនដែលចូលចិត្តរៀនតាមការអានសៀវភៅ",
