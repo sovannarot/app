@@ -2,6 +2,7 @@ var cacheName = "v2";
 var dynamiccacheName = "v1";
 const assets = [
   "/",
+  "https://metodes.lv/wp-content/uploads/sq3r_en.png",
   "/index.html",
   "/src/js/index.js",
   "/src/css/index.css",
